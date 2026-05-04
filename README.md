@@ -1,4 +1,4 @@
-# Food Donation Management System
+#Leftover Food Redistribution System
 
 ## Project Description
 
@@ -33,4 +33,7 @@ This system helps reduce food waste by connecting donors with people in need.
 6. Place project folder inside `htdocs`
 7. Run:
    http://localhost/Leftover_Food_Redistribution_System
+
+## 🗂️ Database
+- File: leftover_food_db_2.sql
 
