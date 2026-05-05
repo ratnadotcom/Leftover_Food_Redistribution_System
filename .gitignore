@@ -1,0 +1,4 @@
+db_config.php
+*.env
+.DS_Store
+/vendor/
