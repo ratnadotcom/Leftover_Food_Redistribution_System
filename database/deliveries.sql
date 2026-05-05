@@ -1,6 +1,10 @@
-CREATE TABLE deliveries (
-    delivery_id INT AUTO_INCREMENT PRIMARY KEY,
-    request_id INT,
-    delivery_status ENUM('pending','on_the_way','delivered') DEFAULT 'pending',
-    FOREIGN KEY (request_id) REFERENCES requests(request_id)
+CREATE TABLE Deliveries (
+    delivery_id     INT PRIMARY KEY AUTO_INCREMENT,
+    request_id      INT NOT NULL UNIQUE,            -- 1:1 with Requests
+    delivery_person VARCHAR(100) NOT NULL,
+    contact         VARCHAR(15),
+    pickup_time     DATETIME,
+    delivery_time   DATETIME,
+    status          ENUM('assigned','in_progress','completed') NOT NULL DEFAULT 'assigned',
+    FOREIGN KEY (request_id) REFERENCES Requests(request_id) ON DELETE CASCADE
 );
