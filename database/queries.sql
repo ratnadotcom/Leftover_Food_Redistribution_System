@@ -1,8 +1,3 @@
--- ============================================
--- FOOD DONATION MANAGEMENT SYSTEM
--- SQL QUERIES FILE
--- ============================================
-
 -- 1. Show all available food
 SELECT * 
 FROM food_items 
